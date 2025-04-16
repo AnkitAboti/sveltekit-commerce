@@ -9,24 +9,13 @@
     <link rel="icon" href="%sveltekit.assets%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     %sveltekit.head%
- <script type="text/javascript">
-  var _paq = _paq || [];
-  var visitor_id;
-  _paq.push([ function() { 
-  visitor_id = this.getVisitorId();
-  document.cookie = "visitor_id="+visitor_id;
-  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-  g.type='text/javascript'; g.async=true; g.defer=true; g.id='fhSiteId'; g.src='https://v25.firsthive.com/engage/push/main.js?fhSiteId=397&visitId='+visitor_id; s.parentNode.insertBefore(g,s);
-  }]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
+<script>
+  var _mtm = window._mtm = window._mtm || [];
+  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
   (function() {
-  var u="https://analytics.firsthive.com/";
-  _paq.push(['setTrackerUrl', u+'piwik.php']);
-  _paq.push(['setSiteId', '397']);
-  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-})();
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='https://analytics.firsthive.com/js/container_cmWcMDze.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
   </head>
   <body class="bg-black">
